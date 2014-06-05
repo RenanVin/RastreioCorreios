@@ -1,0 +1,13 @@
+Rastreio de Mercadorias v1.1 - [vqmod]
+Apenas usuários logados poderá acessar a página de rastreio
+
+Rastreio de Mercadorias v1.0 - [vqmod]
+
+Rápido e fácil de instalar, basta enviar os arquivos e pronto.
+
+Esse módulo não modifica nada em seu OpenCart. Apenas o menu principal usando vQmod.
+Caso o seu sistema seja um template diferenciado ou modificado, e você não quiser que seja adicionado um link no menu principal, envie todos os arquivos menos a pasta vQmod.
+
+Acesso direto a página de rastreio: index.php?route=rastreioCorreios/rastreio
+
+Suporte: contato@renanv.com.br

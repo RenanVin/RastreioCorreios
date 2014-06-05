@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id>Rastreio de Mercadorias</id>
+	<version>1.0</version>
+	<vqmver>2.0</vqmver>
+	<author>Renan Vinicius - www.renanv.com.br</author>
+
+<file name="catalog/controller/common/header.php" error="log">
+	<operation error="skip">
+	<search position="after" index="1"><![CDATA[$this->data['home'] = $this->url->link('common/home');]]></search>
+	<add>
+		<![CDATA[
+			$this->data['rastreio'] = $this->url->link('rastreioCorreios/rastreio');
+			$this->data['text_rastreio'] = "Rastreio de Mercadorias";
+		]]>
+	</add>
+	</operation>
+</file>
+
+<file name="catalog/view/theme/*/template/common/header.tpl" error="log">
+	<operation error="skip">
+		<search  position="replace" index="1"><![CDATA[<div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a>]]></search>
+		<add>
+			<![CDATA[
+				<div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a>
+				<a href="<?php echo $rastreio; ?>"><?php echo $text_rastreio; ?></a>
+			]]>
+			</add>
+	</operation>
+</file>
+
+</modification>
+
+
